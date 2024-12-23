@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>좋아하는 애완동물</title>
+    </head>
+    <body>
+        <header>
+            <h1>좋아하는 애완동물</h1>
+            <p>모든 항목에 빠짐없이 작성해주세요.</p>
+        </header>  
+        <hr>
+        <main>
+            <form>
+                <fieldset>
+                    <legend>개인정보</legend>
+                    <label for="name">이름</label>
+                    <input type="text" 
+                    name="name"
+                    id="name" placeholder="본명을 입력하세요">
+                    <br>
+                    <label for="email">이메일</label>
+                    <input type="email"
+                    name="email" 
+                    id="email" placeholder="메일 주소 쓰세요">
+                </fieldset>
+                <fieldset>
+                    <legend>설문</legend>
+
+                    <table>
+                        <caption>
+                            <strong>가장 좋아하는 애완동물이 어떻게 되나요?</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <td><input type="radio" id="dog" name="pet">
+                                    <label for="dog">강아지</label></td>
+                                <td><input type="radio" id="cat" name="pet">
+                                    <label for="cat">고양이</label> </td>
+                                <td><input type="radio" id="hamster" name="pet">
+                                    <label for="hamster">햄스터</label></td>
+                                <td><input type="radio" id="pig" name="pet">
+                                    <label for="pig">돼지</label></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="radio" id="chipmunk" name="pet">
+                                    <label for="chipmunk">다람쥐</label> </td>
+                                <td><input type="radio" id="bird" name="pet">
+                                    <label for="bird">새</label>    </td>
+                                <td><input type="radio" id="turtle" name="pet">
+                                    <label for="turtle">거북</label></td>
+                                <td><input type="radio" id="spider" name="pet">
+                                    <label for="spider">거미</label></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td><input type="radio" id="lizard" name="pet">
+                                    <label for="lizard">도마뱀</label>  </td>
+                                <td><input type="radio" id="snake" name="pet">
+                                    <label for="snake">뱀</label>  </td>
+                                <td><input type="radio" id="fish" name="pet">
+                                    <label for="fish">물고기</label></td>
+                                <td><input type="radio" id="insect" name="pet">
+                                    <label for="insect">곤충</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" id="other" name="pet">
+                                    <label for="other">그외</label></td>
+                                <td colspan="3"><textarea rows="1" cols="30" name="pet" placeholder="그외 체크시 입력해주세요" style="resize: none;"></textarea></td>
+                            </tr>
+                        </tfoot>                        
+                    </table>
+
+                </fieldset>
+                <fieldset>
+                    <legend>기타 의견</legend>
+                    <textarea rows="3" cols="30" name="comment"></textarea>
+                </fieldset>
+                <input type="submit">
+            </form>
+        </main>
+        <hr>
+        <footer>
+            <p>감사합니다.</p>
+        </footer>
+    </body>
+</html>
